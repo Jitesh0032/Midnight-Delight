@@ -7,11 +7,11 @@
 }
 
 * {
+    font-family: "Roboto Condensed", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
-    font-family: "Baskervville SC", serif;
 }
 
 body {
@@ -141,5 +141,82 @@ h1 {
 }
 
 .cart:hover, .user:hover {
-    background-color: rgba(149, 157, 165, 0.2) 0px 8px 25px;
+    color: var(--secondaryColor);
+}
+
+.main-highlight {
+    margin: 3% 0;
+    padding: 2%;
+    background-color: var(--secondaryColor);
+    border-radius: 8px;
+
+}
+
+.main-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-title {
+    font-size: 25px;
+}
+
+.main-arrow {
+    font-size: 20px;
+}
+
+.back , .next {
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.back:hover, .next:hover {
+    color: var(--whiteColor);
+}
+
+.highlight-wrapper {
+    width: 100%;
+    display: flex;
+    padding: 1%;
+    border-radius: 8px;
+    gap: 1.5rem;
+    overflow-x: hidden;
+
+}
+
+.highlight-card {
+    display: flex;
+    flex-direction: row;
+    min-width: 200px;
+    width: 80%;
+    height: 100%;
+    grid-area: 1rem;
+    border-radius: 8px;
+    padding: 1%;
+    background-color: var(--whiteColor);
+    cursor: pointer;
+
+}
+
+.highlight-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.highlight-desc h3 {
+    color: var(--primaryColor);
+    margin-left: 5px;
+}
+
+
+.highlight-desc p {
+    font-size: 18px;
+    color: black;
+    margin-left: 5px;
 }
