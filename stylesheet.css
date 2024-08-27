@@ -1,13 +1,16 @@
 :root {
-    --primaryColor: rgb(209, 74, 25);
-    --secondaryColor: rgb(253, 131, 65);
-    --whiteColor: rgb(255, 255, 255);
-    --blackColor: rgb(0, 0, 0);
+    --primaryColor: #0e6253;
+    --secondaryColor: #ffc107;
+    --whiteColor: #ffffff;
+    --blackColor: #000000;
+    --softGreenColor: #d9f2ee;
+    --darkGreyColor: #a7a7a7;
+    --greyColor: #f5f5f5;
 
 }
 
 * {
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: "Open Sans", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -223,7 +226,7 @@ h1 {
 
 .main-menu {
     min-height: 100%;
-    background-color: rgb(224, 224, 224);
+    background-color: var(--greyColor);
     padding: 2%;
     border-radius: 8px;
 }
@@ -255,10 +258,10 @@ h1 {
     justify-content: space-around;
     min-width: 80px;
     height: 100%;
-    background-color: white;
-    color: black;
+    background-color: var(--whiteColor);
+    color: var(--blackColor);
     border-radius: 8px;
-    border: 1px solid rgb(247, 113, 51);
+    border: 1px solid var(--softGreenColor);
     font-size: 14px;
     cursor: pointer;
 
@@ -271,9 +274,24 @@ h1 {
     width: 80%;
     height: 60%;
     font-size: 30px;
-    background-color: var(--secondaryColor);
-    color: var(--blackColor);
+    background-color: var(--softGreenColor);
+    color: var(--primaryColor);
     border-radius: 8px;
 }   
 
-filter
+.filter-card:hover {
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+}
+
+.filter-card:hover .filter-icon {
+background-color: var(--whiteColor);
+}
+
+.divider {
+    margin-top: 1rem 0;
+    height: 1px;
+    width: 100%;
+    background-color: var(--primaryColor);
+    border: none;
+}
