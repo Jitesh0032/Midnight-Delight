@@ -348,6 +348,21 @@ background-color: var(--whiteColor);
 }
 
 .detail-favourites {
-    font-size: 24px;
+    font-size: 40px;
 }
-.
+
+.detail-card:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 5px;
+}
+
+.detail-card:hover .detail-img {
+    filter: opacity(1);
+}
+
+.detail-card:hover .detail-name {
+    color: var(--primaryColor);
+}
+
+.detail-card:hover .price {
+    letter-spacing: 2;
+}
