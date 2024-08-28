@@ -176,7 +176,7 @@ h1 {
 }
 
 .back:hover, .next:hover {
-    color: var(--whiteColor);
+    color: var(--primaryColor);
 }
 
 .highlight-wrapper {
@@ -239,6 +239,14 @@ h1 {
     margin-top: 1.5rem;
     gap: 1rem;
 
+}
+.back-menus , .next-menus {
+    cursor: pointer;
+    display: inline-flex;
+}
+
+.back-menus:hover, .next-menus:hover {
+    color: var(--primaryColor);
 }
 
 .filter-wrapper {
@@ -389,5 +397,10 @@ background-color: var(--whiteColor);
         height: 40px;
         border-radius: 50%;
         z-index: 3;
+    }
+    
+    .sidebar.active {
+        display: flex;
+        z-index: 10;
     }
 }
