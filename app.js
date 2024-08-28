@@ -8,9 +8,9 @@ mobile.addEventListener("click", function(){
 
 mobile.addEventListener("click", function(){
     const menuBars = document.querySelector("is-active");
-    if(window.innerWidth<=768 && manuBars) {
+    if(window.innerWidth<=768 && menuBars) {
         mobile.classList.toggle("is-active");
-        mobileLink.classList.toogle("active");
+        mobileLink.classList.toggle("active");
     }
 })
 
@@ -28,20 +28,20 @@ $(".back").bind("click", function(e){
 $(".next").bind("click", function(e){
     e.preventDefault();
     $(".highlight-wrapper").animate({
-        scrollLeft: "-=" + step + "px"
+        scrollLeft: "+=" + step + "px"
     });
 });
 
 $(".back-menus").bind("click", function(e){
     e.preventDefault();
-    $(".highlight-wrapper").animate({
+    $(".filter-wrapper").animate({
         scrollLeft: "-=" + step + "px"
     });
 });
 
 $(".next-menus").bind("click", function(e){
     e.preventDefault();
-    $(".highlight-wrapper").animate({
-        scrollLeft: "-=" + step + "px"
+    $(".filter-wrapper").animate({
+        scrollLeft: "+=" + step + "px"
     });
 });
